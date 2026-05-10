@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ETHIOPIA</title>
+</head>
+<link rel="stylesheet" href="assignmentcss.css">
+<body>
+     <label>•Music♪♪♪</label>
+    <button onclick="playSound()">Play</button>
+    <label><•••••♥•••••></label>
+        
+<button onclick="stopSound()">Stop</button>
+
+<audio id="mySound" autoplay >
+  <source src="Love Story.mp3" type="audio/mp3">
+</audio>
+      
+<script>
+function playSound() {
+    document.getElementById("mySound").play();
+}
+function stopSound() {
+    let sound = document.getElementById("mySound");
+    sound.pause();      
+    sound.currentTime = 0; 
+}
+</script>
+  
+<input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    <label for="menu-toggle" class="menu-button">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </label>
+
+    <nav class="side-menu">
+        <div class="menu-header">Explore Ethiopia</div>
+        <a href="#home">Home</a>
+        <a href="#places">Beautiful Places</a>
+        <a href="#history">History</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+<h1> ETHIOPIA<br>🇪🇹</h1>
+  
+<div class="slider">
+    <button class="btn prev" onclick="prevImage()">❮</button>
+
+    <img id="sliderImage" src="ethio1.jpeg">
+
+    <button class="btn next" onclick="nextImage()">❯</button>
+</div>
+
+<script>
+window.onload = function () {
+
+    const images = [
+        
+        "ethio1.jpeg",
+        "ethio2.jpeg",
+        "ethio3.jpeg",
+        "ethio4.5.jpeg",
+        "ethio5.jpeg",
+        "ethio11.jpg",
+        "ethio7.jpeg",
+        "ethio10.jpeg"
+    ];
+
+    let index = 0;
+    const img = document.getElementById("sliderImage");
+
+    function showImage() {
+        img.classList.add("fade-out");
+
+        setTimeout(() => {
+            img.src = images[index];
+            img.classList.remove("fade-out");
+        }, 400);
+    }
+    function nextImage() {
+        index = (index + 1) % images.length;
+        showImage();
+    }
+    function prevImage() {
+        index = (index - 1 + images.length) % images.length;
+        showImage();
+    }
+    window.nextImage = nextImage;
+    window.prevImage = prevImage;
+    setInterval(nextImage, 4000);
+};
+</script>
+  
+  <center><h2><u>ETHIOPIA</u></h2></center><br>
+• Ethiopia is a country which is found in the Horn of Africa. She also bordered by countries like Kenya, Sudan, Somalia, Eritrea and Djibouti.
+  <h2><u><b>Ethiopias location on map</b></u></h2>
+  
+  <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26807.123456!2d39.7469!3d8.9806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAddis%20Ababa!5e0!3m2!1sen!2set!4v1680500000000!5m2!1sen!2set" 
+  width="350" 
+  height="300" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+  <p style="color:;">
+  <b>• Ethiopia’s</b> capital city is <b>Addis Ababa</b>. It is found in center of Ethiopia. It is a very developed and beautiful city among most of African cities.<br><br>
+  <b>• Ethiopia</b> has around 120 million peoples and have 1,104,300km² area. That makes her the third place in African population. Ethiopia is also known by her multi-cultural diversity. There are more than 82 societies living in Ethiopia.<br> <br>
+    <b>• Ethiopia</b> has 12 regions and 2 city Administrations
+    <h2><center><u>Ethiopian regions</u></center></h2>
+    <table border="solid">
+    <tr>
+      <th>no</th>
+      <th>Regions of Ethiopia</th>
+      <th>Area(km²)</th>
+    </tr>
+    <tr >
+      <td>1.</td>
+      <td>Tigray</td>
+      <td >50,000  </td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Amhara</td>
+      <td>~170,000</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>Oromia</td>
+      <td>~353,000</td>
+    </tr>
+    <tr>
+      <td>4.</td>
+      <td>Benishangul Gumuz</td>
+      <td>50,000</td>
+       </tr>
+    <tr>
+      <td>5.</td>
+      <td>Gambela</td>
+      <td>~25,000</td>
+    </tr>
+      <tr>
+        <td>6.</td>
+        <td>Harari</td>
+        <td>~3,000</td>
+      </tr>
+      <tr>
+        <td>7.</td>
+        <td>Somali</td>
+        <td>~350,000</td>
+      </tr>
+      <tr>
+        <td>8.</td>
+        <td>Southern Nations, Nationalities, and Peoples' Region (old SNNPR)</td>
+        <td>~110,000</td>
+      </tr>
+      <tr>
+        <td>9.</td>
+        <td>Affar</td>
+        <td>~100,000</td>
+      </tr>
+      <tr>
+        <td>10.</td>
+        <td>Sidama</td>
+        <td>~12,000</td>
+      </tr>
+      <tr>
+        <td>11.</td>
+        <td>South West Ethiopia Peoples</td>
+        <td>~40,000</td>
+      </tr>
+      <tr>
+        <td>12.</td>
+        <td>Central Ethiopia</td>
+        <td>~30,000</td>
+      </tr>
+  </table>
+    <h2> <center><u>Administrations cities</u></center></h2>
+    <table border="1">
+      <tr>
+        <th>no</th>
+        <th>Administrations cities</th>
+        <th>Area(km²)</th>
+      </tr>
+      <tr>
+        <td>1.</td>
+        <td>Addis Ababa</td>
+        <td>~527</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td>Adama</td>
+        <td>~29</td>
+      </tr>
+    </table><br><br>
+  <b>• Ethiopia’s</b>official working language is Amharic. There are also several languages that are used by most of the people like Afan Oromo, Tigrigna, etc. English is also used in some places.<br> <br>
+  <b>• Ethiopia</b> is one of the oldest nations in the world. She is also famous for never being colonized. That makes her the first country that defeated the whites in the Battle of<b> ADAWA</b> . She is also famous for ancient civilizations such as the <b>Kingdom of Aksum, Lalibela Church, Fasilides Castle, Gada system,</b> etc...
+    <h2>Historical places...</h2>
+ <div class="image-container">
+    <img src="axuum.jpeg">
+    <img src="lalibela.jpeg">
+    <img src="fasil.jpg">
+    <img src="sof.jpeg">
+    <img src="abajifar.jpeg">
+   <img src="bet.jpeg">
+   <img src="najashi.jpeg">
+</div>
+  <b>• Ethiopia</b> is also known as the source of humanity. This means the first human fossil was found in Ethiopia, which existed about 3.2 million years ago. She is called Australopithecus afarensis (Lucy) (1974).<br> <img src="dinqinesh2.jpeg" height="175" width="175" ><br>
+  <b>• Ethiopia</b> is also known for culture and traditions. There are a lot of big religions like <b>Islam, Orthodox Christianity, Protestants</b>. <b>Ethiopia</b> also has amazing festivals like <b>Timket, Eid Al-Fitr, Genna, Irrecha,</b> etc...<br><br>
+  <b>• Ethiopia</b> is also known for <b>coffee culture</b> because she is the birthplace of coffee. This coffee culture makes Ethiopian people socially active where people gather, talk, and bond. She is also known for her famous and delicious foods like <b>doro wat, injera, kitfo, genfo,</b> etc...<br><br>
+    <h2>foods...</h2>
+    <div class="image-container">
+    <img src="coffee.jpeg">
+    <img src="buna.jpeg">
+    <img src="doro.jpeg">
+    <img src="gonfo.jpeg">
+    <img src="kitfo.jpeg">
+    <img src="cacebsa.jpeg">
+    <img src="bayainet.jpeg">
+    <img src="kurt.jpeg">
+      <img src="food.jpeg">
+</div>
+    
+  <b>• Ethiopian</b> clothing and music (dance) culture is on another level among all African countries.<br><br>
+• Right now Ethiopian country economy is growing at a high rate. After several years, Ethiopia’s economy was mainly based on agriculture only, but now thanks to Prime Minister <b>Dr. Abiy Ahmed</b>, different industries are expanding in Ethiopia. This makes most Ethiopian people employed.<br><br>
+  <b>• Ethiopia</b> has a very unique calendar which has 13 months. She also has her own alphabet called <b>Ge’ez script</b>, which is used for Amharic and Tigrigna languages.<br> <pre><img src="Geez.jpeg" height="175" width="175"> <img src="gez.png" height="175" width="175"> </pre><br>
+    <b>• In Ethiopia </b> there is also the Blue Nile River (Abbay) which starts from Lake <b>Tana</b> and flows to <b>Sudan</b>. This river is used for the production of electricity in Ethiopia by building the Grand Ethiopian Renaissance Dam (GERD). She is also known for different lakes like <b>Tana, Wabe Shebelle, Awash,</b> etc...<br> <img src="dam.jpeg" height="175" width="175"> <img src="lake.jpeg" height="175" width="175"><br>
+Geographically, Ethiopia has high mountains, plateaus, and the Great Rift Valley running through it. Examples are <b>Simen mountain, Bale mountain, Tullu Dimtu mountain,</b> etc...<br><br>
+    <b>• Ethiopia</b> is also known for her brave athletes around the world, especially in long-distance running like marathon and Olympic races. She has well-known athletes like <b>Haile Gebreselassie, Derartu Tulu, Kenenisa Bekele, Almaz Ayana,</b> etc... They bring honor to Ethiopia every year.<br>
+    <h2>Athelates...</h2>
+    <div class="image-container">
+    <img src="atl.jpeg">
+    <img src="atl1.jpeg">
+    <img src="atl2.jpeg">
+    <img src="atl3.jpeg">
+    <img src="atl4.jpeg">
+    <img src="atl5.jpeg">
+</div>
+    • She also has a lot of endemic animals that found only in Ethiopia such as Walia Ibex,Red fox,Chilada Baboon, <br> 
+    
+    <h2>Endemic animals</h2>
+    <div class="image-container">
+    <img src="walia.jpeg">
+    <img src="fox.jpeg">
+    <img src="minlik.jpg">
+    <img src="gilada.jpeg">
+      <img src="lion.jpeg">
+        <img src="elk.jpg">
+</div>
+  </p>
+    
+  <h2><center><u>for more visit<br>Habibi come to Ethiopia</u></center></h2>
+
+  <video width="360" height="450" controls>
+      <source src="aaaa.mp4" type="video/mp4">
+    </video>
+      
+      <video width="360" height="450" controls>
+    <source src="video 2.mp4" type="video/mp4">
+</video>
+      
+      <video width="360" height="450" controls>
+    <source src="best edit.mp4" type="video/mp4">
+</video>
+ 
+      <h2 id="the"> <marquee> Thanks for reading i hope you learned  something new from this page!</marquee> </h2>
+<div id="reg-portal-unique">
+   <div class="reg-card">
+     <h2>For More Help</h2>   
+                <form action="https://google.com" method="GET" target="_blank" class="search-box">
+                    <input type="text" name="q" placeholder="Search Google..." required>
+                    <button type="submit">🔍</button>
+                </form>
+
+                <h2>Register please</h2>
+        <form>
+            <label>Full Name</label>
+            <input type="text" required>
+            <label>Gmail</label>
+            <input type="email"required>
+            <label>Password</label>
+            <input type="password"  required>
+            <label>Date of Birth</label>
+            <input type="date" required>
+            <label>Sex</label>
+            <select>
+              <option></option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+    </div>
+</div>
+  <footer>
+    <p>Made by Abubaker seifu for Ethiopia</p>
+</footer>
+</body>
+</html>

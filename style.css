@@ -1,0 +1,251 @@
+.menu-btn {
+  width: 35px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  
+    /* 3 dash line on top right corner*/
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+/* boxun yidebiqillingal*/
+.menu-checkbox {
+    display: none;
+}
+
+/* ye sostu line teqoxaxari */
+.menu-button {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    width: 30px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1001; /* Stay above the menu */
+}
+
+/* 3tu line editay yaregal*/
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    border-radius: 5px;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+/* The Side Menu Panel */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Start hidden off-screen */
+    width: 280px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    padding-top: 80px;
+    transition: all 0.4s ease;
+    z-index: 1000;
+}
+
+.menu-header {
+    padding: 0 25px 20px;
+    font-weight: bold;
+    color: #059669; /* Ethiopian Green */
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
+.side-menu a {
+    display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #444;
+    font-size: 1.1rem;
+    transition: background 0.2s;
+}
+
+.side-menu a:hover {
+    background-color: #f3f4f6;
+    color: #f59e0b; /* Gold Hover */
+}
+
+/* --- THE CLICK LOGIC (CHECKBOX HACK) --- */
+
+/* 1. When checked, slide the menu in */
+#menu-toggle:checked ~ .side-menu {
+    right: 0;
+}
+
+/* 2. Animate lines into an 'X' when checked */
+#menu-toggle:checked ~ .menu-button .line:nth-child(1) {
+    transform: translateY(9.5px) rotate(45deg);
+}
+
+#menu-toggle:checked ~ .menu-button .line:nth-child(2) {
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+#menu-toggle:checked ~ .menu-button .line:nth-child(3) {
+    transform: translateY(-9.5px) rotate(-45deg);
+}
+.fx-glitch:hover{animation: glitch;}
+:root {
+            --primary-gold: #f59e0b;
+            --ethiopia-green: #059669;
+            --dark-bg: #111827;
+            --glass: rgba(255, 255, 255, 0.1);
+        }
+
+
+
+
+.image-container {
+    display: flex;              /* put images in a row */
+    overflow-x: auto;           /* enable horizontal scroll */
+    gap: 5px;
+    padding: 10px;
+}
+
+.image-container img {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    flex-shrink: 0;             /* prevent shrinking */
+}
+
+h1 { text-align: center;}
+body {
+        margin: 0;
+        font-family: Arial;
+    background: linear-gradient(to right, #078930, #fcd116, #da121a);
+        color: white;
+        
+    }
+     
+    
+    .btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 30px;
+        background: rgba(0,0,0,0.5);
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .prev { left: 10px; }
+    .next { right: 10px; }
+
+    .btn:hover {
+        background: rgba(255,255,255,0.3);
+    }
+
+}
+.slider {
+    position: relative;
+}
+/*ye slidu size*/
+.slider img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+
+    opacity: 1;
+    transition: opacity 0.8s ease-in-out;
+}
+
+/* Fade out effect */
+.fade-out {
+    opacity: 0;
+}
+
+/*made by abuki*/
+ footer {
+            text-align: center;
+            padding: 20px;
+            background: black;
+        }
+
+#reg-portal-unique {
+            font-family: sans-serif;
+            background-color: #f4f4f9;
+            padding: 30px 35px;
+            display: flex;
+            justify-content: center;
+        }
+        #reg-portal-unique .reg-card {
+            background:#abc;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+            color: #333;
+        }
+#reg-portal-unique .search-box {
+           margin-bottom: 2px; 
+           display: flex; }
+#reg-portal-unique 
+.search-box input { 
+       flex: 1; 
+       padding: 8px; 
+       border: 1px solid #ddd; 
+       border-radius: 4px 0 0 4px;
+       }
+#reg-portal-unique 
+.search-box button { 
+        padding: 8px; 
+         border: none; 
+         background: #5c67f2; 
+         color: white; 
+         border-radius: 0 4px 4px 0; 
+         cursor: pointer;
+        }
+#reg-portal-unique h2 { 
+         text-align: center; 
+         margin-top: 0; 
+          }
+#reg-portal-unique label { 
+         display: block; 
+         margin-top: 15px; 
+         font-weight: bold; 
+         font-size: 14px; 
+         text-align: left;
+       }
+#reg-portal-unique input, 
+#reg-portal-unique select {
+       width: 100%;
+       padding: 10px; 
+       margin-top: 5px; 
+       border: 1px solid #ddd;
+       border-radius: 4px; 
+       box-sizing: border-box;
+     }
+#reg-portal-unique 
+.submit-btn { 
+    width: 100%; 
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 20px; 
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#the{
+  background-color: dodgerblue;
+}
+
